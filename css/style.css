@@ -342,17 +342,11 @@ font-family: 'Oswald', sans-serif; */
         grid-template-columns: repeat(1, 1fr);
     }
 }
-.portfolio {
-}
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 0;
-}
-.portfolio__grid-item {
-}
-.portfolio__img {
 }
 @media screen and (max-width: 1280px) {
     .portfolio__grid {
@@ -386,10 +380,6 @@ font-family: 'Oswald', sans-serif; */
 .question .section__h2 {
     margin-bottom: 50px;
 }
-.question_items {
-}
-.question_item {
-}
 .question__h3 {
     text-transform: uppercase;
     color: var(--accent-colot);
@@ -398,14 +388,11 @@ font-family: 'Oswald', sans-serif; */
 .question__h3.close {
     margin-bottom: 31px;    
 }
-.close {
-}
 .question__p {
     color: var(--gray-color);
     margin-bottom: 40px;
     max-width: 730px;
 }
-
 .question__h3.open::before,
 .question__h3.close::before {
     content: "";
