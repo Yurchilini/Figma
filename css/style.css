@@ -364,6 +364,21 @@ font-family: 'Oswald', sans-serif; */
         grid-template-columns: repeat(1, 1fr);
     }
 }
+.test {
+    padding: 100px 0;
+}
+.test-detal {
+    color: var(--accent-colot);
+    margin-bottom: 30px;
+}
+.test-summar {
+    color: var(--gray-color);
+    margin: 10px 0 40px;
+}
+.section-line {
+    height: 100px;
+    background-color: #e5dfdf;
+}
 .question {
     padding-top: 146px;
     padding-bottom: 110px;
