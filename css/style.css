@@ -235,6 +235,7 @@ font-family: 'Oswald', sans-serif; */
 }
 .request__icon {
     margin-right: 15px;
+    color: #000;
 }
 .services {
     padding: 150px 0;
