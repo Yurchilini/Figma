@@ -377,10 +377,17 @@ font-family: 'Oswald', sans-serif; */
     text-transform: uppercase;
     margin-bottom: 20px; 
 }
+.contacts__h3_mob a {
+    text-decoration: none;
+    color: inherit;
+}
 .contacts-mail {
     color: var(--accent-colot);
 }
-
+.contacts-mail a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .footer {
     background-color: var(--dark-color);
