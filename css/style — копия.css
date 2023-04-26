@@ -236,6 +236,17 @@ font-family: 'Oswald', sans-serif; */
 .request__icon {
     margin-right: 15px;
 }
+@media screen and (max-width: 1280px) {
+    .request {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .request__flex {
+        flex-wrap: wrap;
+    }
+}
 .services {
     padding: 150px 0;
 }
@@ -267,11 +278,55 @@ font-family: 'Oswald', sans-serif; */
 .services__icon {
     margin: 0 auto 25px;
 }
+@media screen and (max-width: 1280px) {
+    .services {
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1 fr);
+    }
+    .services__grid-item {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .services__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 0;
+}
+@media screen and (max-width: 1280px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.test {
+    padding: 100px 0;
+}
+.test-detal {
+    color: var(--accent-colot);
+    margin-bottom: 30px;
+}
+.test-summar {
+    color: var(--gray-color);
+    margin: 10px 0 40px;
+}
+.section-line {
+    height: 100px;
+    background-color: #e5dfdf;
 }
 .question {
     padding-top: 146px;
@@ -285,10 +340,35 @@ font-family: 'Oswald', sans-serif; */
     color: var(--accent-colot);
     margin-bottom: 23px;
 }
+.question__h3.close {
+    margin-bottom: 31px;    
+}
 .question__p {
     color: var(--gray-color);
     margin-bottom: 40px;
     max-width: 730px;
+}
+.question__h3.open::before,
+.question__h3.close::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+.question__h3.open::before {
+    transform: rotate(-90deg);
+}
+.question__h3.close + .question__p {
+    display: none;
+}
+@media screen and (max-width: 1280px) {
+    .question {
+        padding: 150px 15px 110px;
+    }
 }
 .partners {
     background-color: var(--dark-color);
@@ -311,6 +391,15 @@ font-family: 'Oswald', sans-serif; */
 }
 .partners__item:last-child {
     margin-right: 0;
+}
+@media screen and (max-width: 1280px) {
+    .partners__flex {
+        justify-content: center;
+    }
+    .partners__item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
 .reviews {
     padding-top: 150px;
@@ -346,6 +435,29 @@ font-family: 'Oswald', sans-serif; */
 .rewiews__author {
     color: var(--accent-colot);
 }
+@media screen and (max-width: 1280px) {
+    .reviews {
+        padding: 100px 15px;
+    }
+    .reviews__grid {
+        gap: 10px;       
+    }
+}
+@media screen and (max-width: 768px) {
+    .reviews {
+        padding: 50px 15px 0 15px;
+    }
+    .reviews__grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 0;                 
+    }
+    .reviews_card {
+        margin-bottom: 0;
+    }
+    .reviews__grid-item {
+        padding-bottom: 30px;
+    }
+}
 .contacts {
     padding-top: 100px;
     padding-bottom: 150px;
@@ -379,6 +491,24 @@ font-family: 'Oswald', sans-serif; */
 .contacts-mail {
     color: var(--accent-colot);
 }
+@media screen and (max-width: 1280px) {    
+    .contacts {
+        padding: 100px 15px;
+    }
+    .contacts__grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10; 
+    }
+    .contacts__grid-item {
+        max-width: 100%;
+    }   
+}
+@media screen and (max-width: 768px) {
+    .contacts__grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 0; 
+    }     
+}
 
 
 .footer {
@@ -395,11 +525,20 @@ font-family: 'Oswald', sans-serif; */
     color: #FFFFFF;
     font-size: 16px;
 }
-@media screen and (max-width: 1280px) {
-    .header__title {
-        padding-left: 15px;
-        padding-right: 15px;
+@media screen and (max-width: 1280px) {    
+    .footer {
+        padding: 15px 15px;
     }
+   
+}
+@media screen and (max-width: 768px) {
+    .footer__flex {
+        flex-direction: column;
+    }     
+}
+
+
+@media screen and (max-width: 1280px) {
     .about {
         padding: 420px 15px 110px 15px;
     }  
@@ -407,54 +546,6 @@ font-family: 'Oswald', sans-serif; */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }  
-    .request {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .services {
-        padding-left: 15px;
-        padding-right: 15px;
-
-    }
-    .services__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1 fr);
-    }
-    .services__grid-item {
-        width: 100%;
-    }
-    .portfolio__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .question {
-        padding: 150px 15px 110px;
-    }
-    .partners__flex {
-        justify-content: center;
-    }
-    .partners__item {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .reviews {
-        padding: 100px 15px;
-    }
-    .reviews__grid {
-        gap: 10px;       
-    }
-    .contacts {
-        padding: 100px 15px;
-    }
-    .contacts__grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10; 
-    }
-    .contacts__grid-item {
-        max-width: 100%;
-    } 
-    .footer {
-        padding: 15px 15px;
-    }
 }
 @media screen and (max-width: 768px) {
     .info {
@@ -480,36 +571,10 @@ font-family: 'Oswald', sans-serif; */
     .about__flex-item:last-child {
         margin-bottom: 0;
     }
-    .request__flex {
-        flex-wrap: wrap;
-    }
-    .services__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .portfolio__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .reviews {
-        padding: 50px 15px 0 15px;
-    }
-    .reviews__grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 0;                 
-    }
-    .reviews_card {
-        margin-bottom: 0;
-    }
-    .reviews__grid-item {
-        padding-bottom: 30px;
-    }
-    .contacts__grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 0; 
-    } 
-    .footer__flex {
-        flex-direction: column;
-    } 
 }
+
+
+
 @media screen and (max-width: 380px) {
     .h1 {
         font-size: 46px;
