@@ -18,8 +18,7 @@
 
 <body>
 
-    <ul id="slide-out" class="sidenav">
-        
+    <ul id="slide-out" class="sidenav">        
         <li><a href="https://che-be.es"><i class="material-icons">cloud</i>Tienda online</a></li>
         <li><a href="https://yurchilini.github.io/Figma/">GitHub profile</a></li>
         <li><div class="divider"></div></li>
@@ -30,7 +29,6 @@
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
         <li><div class="divider"></div></li>
         <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Cerrar</a></li>
-
       </ul>
 
     <header class="header">
@@ -47,6 +45,7 @@
             <h4 class="h4">Cтадионы, газопроводы, мосты, дамбы</h4>
         </div>
     </header>
+
     <section class="about">
         <div class="info">
             <div class="container">
@@ -73,7 +72,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="container">
             <h2 class="text-h2 project-h2">Наши самые большие проекты</h2>
             <div class="about__flex">
@@ -98,6 +97,18 @@
             </div>
         </div>
     </section>
+
+
+  <!-- Modal Structure -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад, вскоре? Коварный lorem своих что которой возвращайся собрал, текста обеспечивает ты вопрос дороге, инициал, несколько правилами гор своего запятых!</p>
+    </div>
+    <div class="modal-footer"></div>
+  </div>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -106,14 +117,15 @@
                     <h5 class="request__h5">Реализуем самые смелые решения в Испании!</h5>
                 </div>
                 <div class="request__flex-rigth">
-                   <button class="request__btn">
+                   <a class="request__btn modal-trigger" href="#modal1">
                         <img src="img/icon-request.svg" alt="Envelope" class="request__icon">
                         Ваш запрос
-                   </button>
+                   </a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="services">
         <div class="container">
             <h2 class="text-h2 section__h2">Чем мы занимаемся?</h2>
@@ -145,6 +157,7 @@
             </div>
         </div>
     </section>
+
     <section class="portfolio">
         <div class="portfolio__grid">
             <div class="portfolio__grid-item">
@@ -197,6 +210,7 @@
             </div>
         </div>
     </section>
+
     <section class="partners">
         <div class="container">
             <h2 class="text-h2 partners__h2">Наши партнеры</h2>
@@ -219,6 +233,7 @@
             </div>
         </div>
     </section>
+
     <section class="reviews">
         <div class="container">
             <h2 class="text-h2 reviews__h2">Отзывы о работе с нами</h2>
@@ -247,6 +262,17 @@
             </div>
         </div>
     </section>
+
+      <!-- Modal Structure -->
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+        <h4>Modal Header 2</h4>
+        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад, вскоре?p>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -255,14 +281,15 @@
                     <h5 class="request__h5">Оставьте заявку и мы свяжемся с вами!</h5>
                 </div>
                 <div class="request__flex-rigth">
-                   <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal2">
                         <img src="img/icon-request.svg" alt="Envelope" class="request__icon">
                         Ваш запрос
-                   </button>
+                   </a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="contacts">
         <div class="container">
             <h2 class="text-h2 contacts__h2">Контакты</h2>
@@ -294,6 +321,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__flex">
